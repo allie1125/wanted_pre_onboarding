@@ -155,3 +155,18 @@ $theme_color: rgba(222, 190, 205, 0.934);
     }
   }
 }
+
+//dropdown 컴포넌트
+.dropdown_box {
+  padding: 3rem 0;
+  margin: 0 auto;
+  width: 50%;
+
+  select {
+    width: inherit;
+    height: 2rem;
+    border: 1px solid $theme_color;
+    border-radius: 5px;
+    padding: 0 1%;
+  }
+}
