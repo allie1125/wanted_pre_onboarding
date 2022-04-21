@@ -80,6 +80,7 @@ $theme_color: rgba(222, 190, 205, 0.934);
   }
 }
 
+//Tab 컴포넌트
 .tab_box {
   padding: 3rem 0;
   .tabs {
@@ -117,6 +118,40 @@ $theme_color: rgba(222, 190, 205, 0.934);
     }
     .curry_rice {
       left: 66.66%;
+    }
+  }
+}
+
+//Input 컴포넌트
+.input_box {
+  padding: 3rem 0;
+  margin: 0 auto;
+  width: 50%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      height: 2rem;
+      margin-bottom: 0.5rem;
+      display: inline-flex;
+      span {
+        width: 5rem;
+        text-align: left;
+      }
+      .input_line {
+        display: block;
+        width: 15rem;
+        border: 1px solid $theme_color;
+        border-radius: 5px;
+        padding: 0.3rem 0;
+        input {
+          all: unset;
+          text-align: left;
+        }
+        span {
+          cursor: pointer;
+        }
+      }
     }
   }
 }
