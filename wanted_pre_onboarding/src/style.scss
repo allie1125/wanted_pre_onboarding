@@ -79,3 +79,44 @@ $theme_color: rgba(222, 190, 205, 0.934);
     color: gray;
   }
 }
+
+.tab_box {
+  padding: 3rem 0;
+  .tabs {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    div {
+      flex: 1;
+      cursor: pointer;
+      width: 33.3%;
+    }
+    .bold {
+      font-weight: bold;
+    }
+  }
+  .bottom_bar {
+    width: 30%;
+    margin: 0 auto;
+    border-bottom: 5px solid gray;
+
+    .inner_bar {
+      width: 33.3%;
+      border-bottom: 5px solid $theme_color;
+      position: relative;
+      transition: all 0.5s;
+      left: 0;
+      top: 5px;
+    }
+    .potato {
+      left: 0%;
+    }
+    .sweet_potato {
+      left: 33.33%;
+    }
+    .curry_rice {
+      left: 66.66%;
+    }
+  }
+}
