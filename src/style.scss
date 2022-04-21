@@ -88,6 +88,7 @@ $theme_color: rgba(222, 190, 205, 0.934);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    min-width: 15rem;
     div {
       flex: 1;
       cursor: pointer;
@@ -101,6 +102,7 @@ $theme_color: rgba(222, 190, 205, 0.934);
     width: 30%;
     margin: 0 auto;
     border-bottom: 5px solid gray;
+    min-width: 15rem;
 
     .inner_bar {
       width: 33.3%;
@@ -126,10 +128,11 @@ $theme_color: rgba(222, 190, 205, 0.934);
 .input_box {
   padding: 3rem 0;
   margin: 0 auto;
-  width: 50%;
+  width: 40%;
   ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
     li {
       height: 2rem;
       margin-bottom: 0.5rem;
@@ -160,10 +163,11 @@ $theme_color: rgba(222, 190, 205, 0.934);
 .dropdown_box {
   padding: 3rem 0;
   margin: 0 auto;
-  width: 50%;
+  width: 20%;
+  min-width: 15rem;
 
   select {
-    width: inherit;
+    width: 100%;
     height: 2rem;
     border: 1px solid $theme_color;
     border-radius: 5px;
