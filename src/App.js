@@ -4,6 +4,7 @@ import Toggle2 from "./components/Toggle2";
 import Tab from "./components/Tab";
 import Input from "./components/Input";
 import Dropdown from "./components/Dropdown";
+import Dropdown2 from "./components/Dropdown2";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Tab />
       <Input />
       <Dropdown />
+      <Dropdown2 />
     </div>
   );
 }
