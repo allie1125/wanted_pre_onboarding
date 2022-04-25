@@ -27,11 +27,13 @@ const Dropdown = () => {
       const result = dropdownMenus.filter((word) => word.toLowerCase().includes(value.toLowerCase()));
       setSearchResultMenu(result);
     } else {
+      //검색입력값이 없거나 모두지워졌을때 검색메뉴배열 비우기
       setSearchResultMenu([]);
     }
   };
 
   const renderAllDropdownMenu = () => {
+    //검색입력값이 없을 때 기본메뉴배열 노출
     if (value === "") {
       return dropdownMenus.map((el, i) => (
         <li
@@ -49,6 +51,7 @@ const Dropdown = () => {
   };
 
   const renderSearchDropdownMenu = () => {
+    //검색문자를 포함하는 메뉴배열 노출
     return searchResultMenu.map((el, i) => (
       <li
         key={i}

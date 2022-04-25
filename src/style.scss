@@ -3,7 +3,7 @@ $theme_color: rgba(222, 190, 205, 0.934);
 .toggle_container {
   display: flex;
   width: 20%;
-  margin: 10% auto 0;
+  margin: 0 auto;
   position: relative;
   background-color: $theme_color;
   border: 4px solid $theme_color;
@@ -182,15 +182,17 @@ $theme_color: rgba(222, 190, 205, 0.934);
   }
 }
 
+//dropdown 컴포넌트
 .dropdown_box2 {
   padding: 3rem 0;
-  min-height: 400px;
+  min-height: 380px;
   ul {
     list-style: none;
     list-style-type: none;
     width: 15%;
     margin: 0 auto;
     padding: 0;
+    min-width: 15rem;
     li {
       border: 0.1px solid $theme_color;
       line-height: 2;
@@ -227,5 +229,73 @@ $theme_color: rgba(222, 190, 205, 0.934);
     .off {
       display: none;
     }
+  }
+}
+
+//slider 컴포넌트
+.slider_box {
+  padding: 3rem 0;
+  margin: 0 auto;
+  width: 100%;
+  .count_box {
+    border: 1px solid $theme_color;
+    width: 22%;
+    margin: 0 auto;
+    height: 3rem;
+    line-height: 3;
+    padding: 0 1%;
+    span {
+      width: 10%;
+    }
+    .count {
+      text-align: center;
+    }
+    .percent {
+      float: right;
+    }
+  }
+  .percent_line_box {
+    width: 100%;
+    cursor: pointer;
+
+    .line {
+      all: unset;
+      margin: 0 auto;
+      width: 24% !important;
+      height: 0.3rem;
+      background-color: $theme_color;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+  }
+  .percent_buttons_box {
+    display: flex;
+    justify-content: space-between;
+    width: 24%;
+    margin: 0 auto;
+    padding: 1%;
+    > div {
+      background-color: #dfdfdf;
+      border-radius: 15px;
+      padding: 1%;
+      color: #666;
+      width: 3rem;
+      cursor: pointer;
+      &:hover {
+        background-color: $theme_color;
+        color: #fff;
+      }
+    }
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 15px;
+    background: $theme_color;
+    border: 3px solid #fff;
+    cursor: pointer;
+    // box-shadow: -100vw 0 0 100vw dodgerblue;
   }
 }
