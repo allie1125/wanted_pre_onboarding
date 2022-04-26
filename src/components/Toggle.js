@@ -2,16 +2,19 @@ import React, { useState } from "react";
 import "../style.scss";
 
 const Toggle = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
+  const changeToggleStatus = () => {
+    setToggle(!toggle);
+  };
 
   return (
     <>
-      <div className="toggle_container" onClick={() => setToggle(!toggle)}>
-        <div className={`toggle_button ${toggle ? "left" : "right"}`}></div>
-        <div className="toggle_text">기본</div>
-        <div className="toggle_text">상세</div>
+      <h2>1. Toggle</h2>
+      <div className="toggle_box" onClick={changeToggleStatus}>
+        <div className={`toggle_button ${toggle ? "right" : "left"}`}></div>
+        <div className={`toggle_text ${toggle ? "gray" : "black"}`}>기본</div>
+        <div className={`toggle_text ${toggle ? "black" : "gray"}`}>상세</div>
       </div>
-      <p>{toggle ? "기본" : "상세"} 선택</p>
     </>
   );
 };

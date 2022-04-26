@@ -38,6 +38,7 @@ const Input = () => {
 
   return (
     <div className="input_box">
+      <h2>4. Input</h2>
       <ul>
         <li>
           <span>E-mail</span>

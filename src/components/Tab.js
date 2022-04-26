@@ -14,6 +14,7 @@ const Tab = () => {
 
   return (
     <div className="tab_box">
+      <h2>2. Tab</h2>
       <div className="tabs">
         {tabMenu.map(({ idx, tabName, kor }) => (
           <div key={idx} className={`tab_text ${tabName === activeTab ? "bold" : ""}`} onClick={() => changeTabMenu(tabName)}>
