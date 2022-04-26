@@ -110,6 +110,8 @@ $theme_color: rgba(222, 190, 205, 0.934);
         input {
           all: unset;
           text-align: left;
+          float: left;
+          padding-left: 5%;
         }
         span {
           cursor: pointer;
@@ -238,7 +240,6 @@ $theme_color: rgba(222, 190, 205, 0.934);
     width: 1.5rem;
     height: 1.5rem;
     background: $theme_color;
-    border-radius: 2rem;
     border: 0.3rem solid #fff;
     cursor: pointer;
     box-shadow: -100vw 0 0 100vw $theme_color;
