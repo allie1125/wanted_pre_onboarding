@@ -58,6 +58,7 @@ const Dropdown = () => {
         onClick={() => {
           setSelectedOption(el);
           setIsDropdownOpen(!isDropdownOpen);
+          setUserInput({ value: "" });
         }}
       >
         {el}
@@ -76,7 +77,7 @@ const Dropdown = () => {
         <div className={`option_box ${isDropdownOpen ? "on" : "off"}`}>
           <li className="search_box">
             <span>🔍</span>
-            <input type="text" onChange={(e) => onChangeInput(e)} placeholder="검색..." />
+            <input type="text" onChange={(e) => onChangeInput(e)} placeholder="검색..." value={value} />
           </li>
           {searchResultMenu.length !== 0 ? renderSearchDropdownMenu() : renderAllDropdownMenu()}
         </div>
