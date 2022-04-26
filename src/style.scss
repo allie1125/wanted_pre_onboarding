@@ -49,8 +49,10 @@ $theme_color: rgba(222, 190, 205, 0.934);
   margin: 0 auto;
   border: 5px solid $theme_color;
   height: 30px;
+  border-radius: 2rem;
   cursor: pointer;
   .toggle_button {
+    border-radius: 2rem;
     background-color: #fff;
     width: 10%;
     height: inherit;
@@ -101,7 +103,7 @@ $theme_color: rgba(222, 190, 205, 0.934);
   .bottom_bar {
     width: 30%;
     margin: 0 auto;
-    border-bottom: 5px solid gray;
+    border-bottom: 5px solid #dfdfdf;
     min-width: 15rem;
 
     .inner_bar {
@@ -259,10 +261,10 @@ $theme_color: rgba(222, 190, 205, 0.934);
     cursor: pointer;
 
     .line {
-      all: unset;
+      // all: unset;
       margin: 0 auto;
       width: 24% !important;
-      height: 0.3rem;
+      height: 1.3rem;
       background-color: $theme_color;
       margin-top: 1rem;
       border-radius: 10px;
@@ -288,14 +290,26 @@ $theme_color: rgba(222, 190, 205, 0.934);
     }
   }
 
+  input[type="range"] {
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  //슬라이더커서
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 1.5rem;
     height: 1.5rem;
-    border-radius: 15px;
     background: $theme_color;
-    border: 3px solid #fff;
+    border-radius: 2rem;
+    border: 0.3rem solid #fff;
     cursor: pointer;
-    // box-shadow: -100vw 0 0 100vw dodgerblue;
+    box-shadow: -100vw 0 0 100vw $theme_color;
+  }
+
+  ::-webkit-slider-runnable-track {
+    background: #ddd;
   }
 }
