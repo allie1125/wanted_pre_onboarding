@@ -4,6 +4,7 @@ import Tab from "./components/Tab";
 import Slider from "./components/Slider";
 import Input from "./components/Input";
 import Dropdown from "./components/Dropdown";
+import Carousel from "./components/Carousel";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Slider />
       <Input />
       <Dropdown />
+      <Carousel />
     </div>
   );
 }
